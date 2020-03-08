@@ -102,7 +102,7 @@ textarea {
 
   body {
     display: grid;
-    grid-template-rows: 100px 500px 1500px 270px;
+    grid-template-rows: 100px 500px 1463px 220px;
     grid-template-columns: 100%;
     justify-items: center;
     font-family: 'Spartan';
@@ -111,6 +111,7 @@ textarea {
 
   .content-wrapper {
     width: 360px;
+    padding: 20px 0 20px 0;
   }
 
   header {
@@ -148,6 +149,7 @@ textarea {
     font-size: 22px;
     font-family: "Seaweed Script";
     margin: 0;
+    padding-bottom: 20px;
   }
 
   header img {
@@ -166,12 +168,13 @@ textarea {
   header nav ul {
     padding: 0;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
+    margin: 0;
   }
 
   header nav ul li {
     display: inline-block;
-    margin: 0 20px;
+    margin: 0 35px;
   }
 
 /************** ABOUT STYLES ***************/
@@ -185,10 +188,19 @@ textarea {
 #about h2 {
   font-size: 18px;
   text-align: center;
+  margin: 0;
+}
+
+#about figure {
+  margin: 20px 0;
 }
 
 #about article {
   width: 80%;
+  margin: 0;
+}
+
+#about p {
   margin: 0;
 }
 
@@ -207,6 +219,11 @@ textarea {
 
 .photo img {
   width: 100%;
+  margin-top: 20px;
+}
+
+.caption {
+  margin: 10px 0 0 0;
 }
 
 /************** FOOTER STYLES *****************/
@@ -219,6 +236,10 @@ footer .content-wrapper {
 
 footer .contact-info {
   text-align: center;
+}
+
+footer h3 {
+  margin: 0 0 20px 0;
 }
 
 footer .social-icons {

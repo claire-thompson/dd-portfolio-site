@@ -234,6 +234,7 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 0 20px 0;
 }
 
 .portfolio-items {
@@ -247,7 +248,8 @@ textarea {
 }
 
 .caption {
-  margin: 10px 0 0 0;
+  margin: 10px 0;
+  line-height: 24px;
 }
 
 /************** FOOTER STYLES *****************/
@@ -399,6 +401,11 @@ footer .social-icons {
       font-size: 36px;
     }
 
+    header img {
+      height: 55px;
+      width: 40px;
+    }
+
     header nav ul li {
       font-size: 14px;
       padding: 0 15px;
@@ -431,6 +438,12 @@ footer .social-icons {
       width: 100%;
     }
 
+    /* Portfolio */
+
+    #portfolio .content-wrapper {
+      padding: 20px 0;
+    }
+
     #portfolio .portfolio-items {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -441,8 +454,13 @@ footer .social-icons {
       justify-items: center;
     }
 
-    #portoflio img {
-      height: minmax(191px, 300px)
+    .photo {
+      width: 100%;
+      margin: 0;
+    }
+
+    .photo img {
+      margin: 0;
     }
 
     /* Footer */
@@ -469,9 +487,57 @@ footer .social-icons {
 
    }
 
-   @media screen and (min-width: 1200px) {
+   @media screen and (min-width: 1366px) {
 
     /* Desktop Styles */
+
+    body {
+      font-size: 18px;
+    }
+
+    .content-wrapper {
+      padding: 40px 0;
+    }
+
+    /* Header */
+
+    header h1 {
+      font-size: 60px;
+    }
+
+    header img {
+      height: 91px;
+      width: 66px;
+    }
+
+    header nav ul li {
+      font-size: 24px;
+    }
+
+    /* About */
+
+    #about h2 {
+      font-size: 36px;
+    }
+
+    #about p {
+      line-height: 30px;
+      width: 60%;
+    }
+
+    #about figure {
+      width: 25%;
+    }
+
+    /* Footer */
+
+    footer .social-icons {
+      width: 36%;
+    }
+
+    footer p {
+      padding-left: 60px;
+    }
 
    }
 

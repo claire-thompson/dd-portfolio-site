@@ -102,7 +102,7 @@ textarea {
 
   body {
     display: grid;
-    grid-template-rows: 100px 500px 1463px 220px;
+    grid-template-rows: 100px 500px 1535px 220px;
     grid-template-columns: 100%;
     justify-items: center;
     font-family: 'Spartan';
@@ -150,6 +150,7 @@ textarea {
     font-family: "Seaweed Script";
     margin: 0;
     padding-bottom: 20px;
+    color: #BF1778;
   }
 
   header img {
@@ -157,6 +158,11 @@ textarea {
     width: 24px;
     grid-column: 3;
     margin: 0 0 0 10px;
+  }
+
+  header a {
+    text-decoration: none;
+    color: #BF1778;
   }
 
   header nav {
@@ -174,7 +180,13 @@ textarea {
 
   header nav ul li {
     display: inline-block;
-    margin: 0 35px;
+    padding: 0 25px;
+    text-transform: uppercase;
+  }
+
+  #portfolio-nav {
+    border-left: 1px #BF1778 solid;
+    border-right: 1px #BF1778 solid;
   }
 
 /************** ABOUT STYLES ***************/
@@ -183,12 +195,17 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #818181;
 }
 
 #about h2 {
   font-size: 18px;
   text-align: center;
   margin: 0;
+  text-transform: uppercase;
+  color: #FFF;
+  width: 80%;
+  font-weight: 300;
 }
 
 #about figure {
@@ -202,6 +219,8 @@ textarea {
 
 #about p {
   margin: 0;
+  color: #FFF;
+  line-height: 24px;
 }
 
 /************ PORTFOLIO STYLES **************/
@@ -232,6 +251,7 @@ footer .content-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #BF1778;
 }
 
 footer .contact-info {
@@ -240,6 +260,10 @@ footer .contact-info {
 
 footer h3 {
   margin: 0 0 20px 0;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #FFF;
 }
 
 footer .social-icons {

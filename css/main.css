@@ -181,7 +181,7 @@ textarea {
 
   header nav ul li {
     display: inline-block;
-    padding: 0 25px;
+    padding: 0 15px;
     text-transform: uppercase;
   }
 
@@ -218,7 +218,6 @@ textarea {
   margin: 20px 0;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 #about article {
@@ -392,10 +391,14 @@ footer .social-icons {
     /* Header */
 
     header {
-      width: 80%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     header .content-wrapper{
+      width: 80%;
       display: flex;
       justify-content: space-between;
     }
@@ -417,16 +420,16 @@ footer .social-icons {
 
     /* About */
 
-    #about .content-wrapper {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
     #about h2 {
       font-size: 24px;
       margin-bottom: 20px;
+    }
+
+    #about article {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
     }
 
     #about p {

@@ -102,7 +102,7 @@ textarea {
 
   body {
     display: grid;
-    grid-template-rows: 100px 500px 1535px 220px;
+    grid-template-rows: auto auto 1fr auto;
     grid-template-columns: 100%;
     justify-items: center;
     font-family: 'Spartan';
@@ -110,7 +110,7 @@ textarea {
   }
 
   .content-wrapper {
-    width: 360px;
+    width: 100%;
     padding: 20px 0 20px 0;
   }
 
@@ -252,11 +252,15 @@ textarea {
 
 /************** FOOTER STYLES *****************/
 
+footer {
+  width: 100%;
+}
+
 footer .content-wrapper {
+  background-color: #BF1778;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #BF1778;
 }
 
 footer .contact-info {
@@ -275,7 +279,7 @@ footer .social-icons {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 80%;
 }
 

@@ -254,17 +254,13 @@ textarea {
 
 footer {
   width: 100%;
+  background-color: #BF1778;
 }
 
 footer .content-wrapper {
-  background-color: #BF1778;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-footer .contact-info {
-  text-align: center;
 }
 
 footer h3 {
@@ -273,6 +269,7 @@ footer h3 {
   line-height: 30px;
   font-weight: 300;
   color: #FFF;
+  text-align: center;
 }
 
 footer .social-icons {
@@ -377,6 +374,109 @@ footer .social-icons {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+
+   @media screen and (min-width: 768px) {
+
+    /* Tablet Styles */
+
+    body {
+      font-size: 14px;
+    }
+
+    /* Header */
+
+    header {
+      width: 80%;
+    }
+
+    header .content-wrapper{
+      display: flex;
+      justify-content: space-between;
+    }
+
+    header h1 {
+      padding: 0;
+      font-size: 36px;
+    }
+
+    header nav ul li {
+      font-size: 14px;
+      padding: 0 15px;
+    }
+
+    /* About */
+
+    #about h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    #about article {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #about p {
+      width: 50%;
+    }
+
+    #about figure {
+      width: 40%;
+      padding-right: 20px;
+    }
+
+    #about figure img {
+      width: 100%;
+    }
+
+    #portfolio .portfolio-items {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 20px;
+      grid-template-rows: repeat(3, 1fr);
+      grid-auto-flow: row;
+      align-items: start;
+      justify-items: center;
+    }
+
+    #portoflio img {
+      height: minmax(191px, 300px)
+    }
+
+    /* Footer */
+
+    footer .content-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-self: center;
+      width: 100%;
+    }
+
+    footer h3 {
+      margin: 0;
+    }
+
+    footer .social-icons {
+      display: flex;
+      flex-direction: row;
+      flex-flow: wrap;
+      justify-content: space-around;
+      width: 15%;
+    }
+
+   }
+
+   @media screen and (min-width: 1200px) {
+
+    /* Desktop Styles */
+
+   }
+
+
+
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
